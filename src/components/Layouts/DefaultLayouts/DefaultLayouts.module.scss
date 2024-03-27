@@ -1,0 +1,30 @@
+.wrapper {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex: 1 1;
+  gap: 42px;
+  margin: 50px auto 0;
+  max-width: 1365px;
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .container {
+    display: block;
+    margin: 24px auto;
+    width: 350px;
+  }
+
+  .wrapper {
+    .siderBarMB__layout {
+      display: block;
+    }
+  }
+}

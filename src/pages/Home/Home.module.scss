@@ -1,0 +1,368 @@
+.main__section {
+  --progress-width: 430px;
+  --progressAchieved-width: 270px;
+}
+
+.user__campaign {
+  width: 100%;
+
+  .userCampaign__header {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .userCampaign__header span {
+    margin-left: 6px;
+    color: rgb(140, 109, 253);
+  }
+}
+
+.user__campaign .userCampaign__section {
+  display: flex;
+  flex: 1 1;
+
+  .userCampaign__img {
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+
+  .userCampaign__img .campaign__img {
+    width: 100%;
+    height: 100%;
+    margin: -70px 0px;
+  }
+}
+
+.userCampaign__section .userCampaign__detail {
+  margin-left: 32px;
+
+  .categories__name {
+    display: flex;
+    align-items: center;
+    color: rgb(128, 129, 145);
+  }
+
+  .categories__name .categories__icon {
+    width: 20px;
+    height: 20px;
+    margin: 12px 12px 5px 0;
+  }
+
+  .categories__name .architecture {
+    font-size: 14px;
+    margin: 12px 0 0;
+  }
+
+  .title__section .title__header {
+    margin: 12px 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    word-spacing: 1.5px;
+  }
+
+  .title__section .title__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 400px;
+    text-align: justify;
+    color: rgb(128, 129, 145);
+  }
+
+  .progress__section {
+    position: relative;
+    height: 5px;
+    width: var(--progress-width);
+    border-radius: 5px;
+    margin: 12px 0;
+    background-color: rgba(239, 239, 239, 1);
+  }
+
+  .progress__section .progress__achieved {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: var(--progressAchieved-width);
+    background-color: rgb(74, 205, 141);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.userCampaign__detail .raised__amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 430px;
+  margin: 32px 0;
+
+  .backer__section .backer__number,
+  .amount__section .amount__achieved,
+  .dayNumber__section .dayNumber__achieved {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(75, 82, 100);
+    line-height: 30px;
+  }
+
+  .backer__section .backer__description,
+  .amount__section .amount__description,
+  .dayNumber__section .dayNumber__description {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(178, 179, 189);
+    line-height: 26px;
+    margin: 8px 0;
+  }
+}
+
+// Other Campaign ----------------------------------
+.other__campaign {
+  max-width: 1200px;
+  margin: 32px 0;
+}
+
+.other__campaign .popular__section,
+.other__campaign .recent__section {
+  margin: 32px 0;
+
+  .section__header {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgb(23, 23, 37);
+  }
+}
+
+.popular__section .campaign__list,
+.recent__section .campaign__list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto auto;
+
+  .campaign__detail {
+    border-radius: 15px;
+    box-shadow: 0px 12px 20px 0px rgba(184, 184, 184, 0.1);
+  }
+
+  .campaign__detail .campaign__img {
+    border-radius: 15px;
+    width: 280px;
+    height: 160px;
+    overflow: hidden;
+  }
+
+  .campaign__detail .campaign__img img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .campaign__detail .campaign__img img.ob-cover {
+    object-fit: cover;
+    object-position: 0 -165px;
+  }
+}
+
+.campaign__detail .campaign__infor {
+  margin: 12px 24px;
+
+  .campaign__type {
+    display: flex;
+    align-items: center;
+    color: rgb(128, 129, 145);
+  }
+
+  .campaign__type .folder__icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+  }
+
+  .campaign__type .campaign__name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .campaign__title {
+    width: 240px;
+  }
+
+  .campaign__title .campaign__header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 0;
+  }
+
+  .campaign__title .campaign__description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    word-spacing: 1.8px;
+    margin: 8px 0 16px;
+    color: rgb(128, 129, 145);
+  }
+
+  .author__section {
+    display: flex;
+    align-items: center;
+  }
+
+  .author__section .author__avatar img {
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+  }
+
+  .author__section .author__name {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-left: 12px;
+    color: rgb(128, 129, 145);
+  }
+
+  .author__section .author__name span {
+    font-weight: 600;
+    color: rgb(75, 82, 100);
+  }
+}
+
+.campaign__infor .raised__amount {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .backer__section .backer__number,
+  .amount__section .amount__achieved {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: rgb(75, 82, 100);
+  }
+
+  .backer__section .backer__description,
+  .amount__section .amount__description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: rgb(178, 179, 189);
+  }
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  .main__section {
+    --progress-width: 315px;
+    --progressAchieved-width: 142px;
+
+    width: 350px;
+  }
+  .user__campaign {
+    width: 100%;
+  }
+
+  .user__campaign .userCampaign__section {
+    display: block;
+
+    .userCampaign__img {
+      width: 350px;
+      height: 210px;
+      border-radius: 25px;
+    }
+
+    .userCampaign__img .campaign__img {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  .userCampaign__section .userCampaign__detail {
+    width: 330px;
+    margin-left: 0;
+
+    .title__section {
+      width: 315px;
+    }
+
+    .title__section .title__header {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      word-spacing: 1.5px;
+    }
+
+    .title__section .title__description {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      width: 315px;
+    }
+  }
+
+  .userCampaign__detail .raised__amount {
+    width: 330px;
+
+    .backer__section .backer__number,
+    .amount__section .amount__achieved,
+    .dayNumber__section .dayNumber__achieved {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 26px;
+      color: rgb(75, 82, 100);
+    }
+
+    .backer__section .backer__description,
+    .amount__section .amount__description,
+    .dayNumber__section .dayNumber__description {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: rgb(178, 179, 189);
+      margin: 8px 0;
+    }
+  }
+
+  // Other Campaign------------------------------------
+  .other__campaign {
+    max-width: 350;
+  }
+
+  .popular__section .campaign__list,
+  .recent__section .campaign__list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 16px;
+  }
+
+  .campaign__detail .campaign__infor {
+    .campaign__title .campaign__header {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .campaign__infor .raised__amount {
+    width: 210px;
+
+    .backer__section .backer__number,
+    .amount__section .amount__achieved {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

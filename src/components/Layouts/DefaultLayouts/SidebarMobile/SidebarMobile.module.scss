@@ -1,0 +1,105 @@
+.sideBarMB__wrapper {
+  display: none;
+}
+
+.sideBarMB__wrapper.open {
+  display: none;
+  background-color: white;
+}
+
+.sideBarMB__header {
+  width: 330px;
+  margin: 0px auto;
+
+  .sidebarMB__head__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sidebarMB__head__wrapper .btn__section .campaign__btn {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 8px 13px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgb(140, 109, 253);
+    color: rgb(255, 255, 255);
+  }
+
+  .sidebarMB__head__wrapper .menuBar__icon .menu__barMB {
+    display: block;
+    height: 20px;
+    width: 15px;
+    color: rgb(128, 129, 145);
+  }
+}
+
+.sideBarMB__section {
+  width: 330px;
+  height: 540px;
+  margin: 36px auto 0;
+  box-shadow: 10px 10px 20px 0px rgba(218, 213, 213, 0.3);
+
+  .fundriseMB__section {
+    display: flex;
+    gap: 8px;
+    margin: 14px;
+    color: rgb(162, 162, 168);
+  }
+
+  .fundriseMB__section .fundrise__content {
+    text-decoration: none;
+    color: rgb(75, 82, 100);
+  }
+
+  .nav__bar {
+    list-style-type: none;
+    padding: initial;
+  }
+
+  .mode__section a,
+  .nav__bar li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+  }
+
+  .nav__bar li a label,
+  .mode__section a label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(128, 129, 145);
+  }
+
+  .nav__bar li:hover,
+  .mode__section:hover a {
+    background-color: rgba(241, 251, 247, 1);
+  }
+
+  .nav__bar li:hover a label,
+  .mode__section:hover a .sun__icon,
+  .mode__section:hover a label,
+  .nav__bar li:hover a .navBar__icon {
+    color: rgba(29, 192, 113, 1);
+  }
+
+  .nav__bar li a .navBar__icon,
+  .mode__section a .sun__icon {
+    margin: 0 12px;
+    padding: 14px 0;
+    width: 24px;
+    height: 24px;
+    color: rgba(162, 162, 168, 1);
+  }
+}
+
+@media (max-width: 46.1875em) {
+  .sideBarMB__wrapper.open {
+    display: block;
+  }
+}
